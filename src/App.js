@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// const BASE_URL = process.env.REACT_APP_BASE_URL
+// const ACCESS_TOKEN = process.env.REACT_APP_ACCESS_TOKEN
+
+// export const getMovies = async () => {
+//     try {
+//         const response = await fetch(BASE_URL, {
+//             method: 'GET',
+//             headers: {
+//                 Authorization: `Bearer ${ACCESS_TOKEN}`
+//             }
+//         });
+//         const result = await response.json()
+//         return result;
+//     }
+//     catch (error) {
+//         return error.message
+//     }
+// }
+// export default getMovies;
+
+import React from "react"
+import GetMovies from "./components/GetMovies"
+
+
+function App(){
+    return(
+        <div>
+            <GetMovies/>
+        </div>
+        
+
+    )
 }
-
 export default App;
